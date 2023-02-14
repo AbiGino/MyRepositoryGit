@@ -66,11 +66,13 @@ class Salary extends PolymorphismDemo {
 class VirtualDemo {
 
     public static void main(String [] args) {
+
         Salary s = new Salary("Abi gino berly", "sherly, UP", 3, 3600.00);
         PolymorphismDemo e = new Salary("John Adams", "Boston, MA", 2, 2400.00);
         System.out.println("Call mailCheck using Salary reference --");
         s.mailCheck();
         System.out.println("\n Call mailCheck using Employee reference--");
         e.mailCheck();
+
     }
 }
