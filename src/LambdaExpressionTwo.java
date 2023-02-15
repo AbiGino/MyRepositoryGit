@@ -5,7 +5,9 @@ interface Addable{
 public class LambdaExpressionTwo {
     public static void main(String[] args){
 
-        Addable a1=(a,b)->(a+b);
+        Addable a1=(a,b)->{
+            return (a+b);
+        };
         System.out.println(a1.add(10,20));
 
 
